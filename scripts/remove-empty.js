@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 for (const d of fs.readdirSync("../types")) {
+  //inspect path...
   const dir = path.join("../types", d)
   const files = fs.readdirSync(dir)
   if (files.length === 0 || files.length === 1) {
